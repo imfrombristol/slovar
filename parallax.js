@@ -1,27 +1,3 @@
-$(document).ready(function () {
-
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 1) {
-			$('header').addClass('sticky');
-		}
-		else {
-			$('header').removeClass('sticky');
-		}
-	});
-
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 1) {
-			$('.menu-link').addClass('sticky_text')
-			$('.menu-link').css('line-height', '15px');
-		}
-		else {
-			$('.menu-link').removeClass('sticky_text')
-			$('.menu-link').css('line-height', '');
-		}
-		
-	})
-});
-    
 var parallaxContainer = document.getElementById('parallax'),
     layers = parallaxContainer.children;
 

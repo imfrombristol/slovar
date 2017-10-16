@@ -1,0 +1,47 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.wrapper_p {
+    overflow: hidden;
+    background: grey;
+    height: 100%;
+    width: 102%;
+    position: relative;
+    left: -1%;
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+#parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.parallax__layer {
+    
+    height: 100%;
+    position: absolute;
+    width: 100%;
+
+   /* left: -1%;*/
+  /*  margin-left:-1500px;*/
+
+}
+
+
+.parallax-pic {
+    position: absolute;
+    bottom: 0;
+}
+
+.css-adaptive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

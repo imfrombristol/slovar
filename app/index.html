@@ -4,30 +4,50 @@
 	<meta charset="UTF-8">
 	<title>Словарь</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/parallax.css">
 	<link rel="stylesheet" href="css/main.css">
+	
+	<link rel="stylesheet" href="fonts/font.css">
 </head>
 <body>
 
-	<div class="wrapper">
-		<header class="header">
-			<div class="container">
-				<nav class="navbar clearfix">
-					<ul class="menu">
-						<li class="menu_item">О проекте</li>
-						<li class="menu_item">Разработчики</li>
-						<li class="menu_item">Контакты</li>
-					</ul>
-				</nav>
-			</div>
+	
+		<header class="header clearfix ">	
+			
+			<ul class="menu">
+				<li class="menu_item"><a href="#" class="menu-link">о проекте /</a></li>
+				<li class="menu_item"><a href="#" class="menu-link">разработчики /</a></li>
+				<li class="menu_item"><a href="#" class="menu-link">контакты</a></li>
+			</ul>
+				
+			
 		</header>
 
+	<div class="wrapper">
+		
+
 		<div class="hero">
-			<div class="hero_logo"></div>
-			<div class="hero_tittle">
-				<div class="hero_tittle_head">Энциклопедический словарь</div>
-				<div class="hero_tittle_descript">модальных терминов</div>
+			<div class="hero_parent">
+				<div class="hero_tittle">
+					<div class="hero_logo"> <img class="logo-pic" src="img/logo.png" alt="">	</div>
+					<div class="hero_tittle_head">Энциклопедический словарь</div>
+					<div class="hero_tittle_descript">модальных терминов</div>
+				</div>
 			</div>
+			<div class="wrapper_p">
+        	<div class="parallax" id="parallax">
+            	<div class="parallax__layer"><img class=" css-adaptive parallax-pic" src="img/bot.jpg" alt=""></div>
+            
+            	<div class="parallax__layer"><img class="css-adaptive parallax-pic" src="img/mid.png" alt=""></div>
+            
+            	<div class="parallax__layer"><img class="css-adaptive parallax-pic" src="img/top.png" alt=""></div>
+        	</div>
+    	</div>
 		</div>
+
+		<section class="content">
+			
+		</section>
 	</div>
 	
 	<footer class="footer">
@@ -36,6 +56,8 @@
 		</div>
 		
 	</footer>
-	
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>

@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	sass = require('gulp-sass'),
+	notify = require("gulp-notify"),
 	browserSync = require('browser-sync');
 
 
