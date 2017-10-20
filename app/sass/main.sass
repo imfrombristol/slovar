@@ -3,6 +3,7 @@ html, body
 	height: 100%
 	margin: 0
 	padding: 0
+	// 
 
 	font-family: 'Roboto Slab', serif
 	// background: url(/img/bg.jpg) center center
@@ -10,6 +11,8 @@ html, body
 	// background-repeat: no-repeat
 html
 	background-color: black
+body
+	overflow: hidden
 ul 
 	padding: 0
 	margin: 0
@@ -20,15 +23,15 @@ a
 .wrapper
 	position: relative
 	height: 100%
-	
-	height: 100%
 	overflow: hidden
 	
+.wrapper_2
+	padding: 2em 5em
 
 
 .container
 	margin: 0 auto
-	padding: 2em 5em
+	padding: 1em 5em
 	
 .clearfix::after 
     content: ""
@@ -39,38 +42,69 @@ a
 	height: 80px
 	position: fixed
 	width: 100%
-	background-color: none
+	
 	z-index: 100
 	transition: all 0.4s ease
+	
 .sticky
 	background-color: black
 	height: 40px
 	transition: all 0.4s ease
-.sticky_text
-	font-size: 30px
+	overflow: hidden
 
-	transition: all 0.4s ease
 
+
+.home_logo
+	padding-left: 3em
+	height: 90px
+	position: absolute
+	left: 0
+	top: -15px
+	opacity: 0
+.home_logo-sticky
+	height: 80px
+	opacity: 1
+	padding-left: 3em
+	transition: all 0.5s ease-in
 .menu
 	position: relative
 	float: right
 	margin-right: 2em
 .menu-link
-	line-height: 70px
-	transition: all 0.4s ease	
+	line-height: 45px
+	transition: all 0.4s ease
+	font-size: 40px	
+	font-family: 'Olietta-script', arial
+
+
+.sticky_text
+	font-size: 25px
+	transition: all 0.4s ease
+	line-height: -1px
+
 .menu_item
 	display: inline-block
-	font-size: 35px
+	margin-left: 15px
 	
-	font-family: 'Oliettascript BoldItalic', arial
 	z-index: 10
-	
+
+.menu>.menu_item>.menu-link
+	&:after
+		content: ' /'
+
+#contacts_but
+	&:after
+		content: ' '
 
 .menu_item:hover
-	box-shadow: inset 0 -1px 0px 0px rgba(225, 225, 225, .7)
+	box-shadow: inset 0 5px 0px 0px rgba(225, 225, 225, 1)
+	
+.menu_item:active
+	box-shadow: inset 0 5px 0px 0px rgba(225, 225, 225, 1)
 
 .menu-link
 	z-index: 15	
+
 
 .hero
 	
@@ -99,8 +133,7 @@ a
 .hero_tittle
 	z-index: 250
 	display: block
-
-	
+		
 .hero_tittle_head, .hero_tittle_descript
 	text-align: center 
 	color: white
@@ -113,11 +146,29 @@ a
 	font-size: 30px
 	letter-spacing: 5px
 
+.content
+	height: 100vh
+	width: auto
+	background-image: url(../img/bg_section.jpg)
+	background-size: cover
+	position: relative
+.content .last
+	height: 40%
 
-
-
+.textblock
+	width: 50vh
+.text__descript
+	text-align: justify
+	font-weight: 100
+.hidden
+	display: none
+	transition: all 0.4s ease	
 .footer
 	background-color: black
 	color: white
 	height: 100px
 	width: 100%
+	position: absolute
+	bottom: 0
+
+

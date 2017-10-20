@@ -34,6 +34,10 @@ body, html {
 
 }
 
+.mid {
+    top: 120px;
+}
+
 
 .parallax-pic {
     position: absolute;

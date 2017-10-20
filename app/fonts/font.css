@@ -1,2 +1,8 @@
- @import url('app/fonts/Oliettascript.ttf');
+ @font-face{
+ 	font-family: "Olietta-Script";
+ 	src: url(Oliettascript.ttf) format("truetype");
+ 	font-style: normal;
+ 	font-weight: normal;
+ 	} 
+ 	
  @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');

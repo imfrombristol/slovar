@@ -1,0 +1,52 @@
+.clearfix::after 
+    content: ""
+    display: table
+    clear: both
+
+.header
+	font-family: "Olietta-Script", arial
+.container
+	padding: 1em 3em 0em 3em
+	
+.logo
+	display: inline-block
+	float: left
+	width: 150px
+	height: 100px
+	background-image: url("../img/logo_black.png")
+	background-size: cover
+.menu_nav
+	border-bottom: 1px solid #808080
+.menu
+	display: inline-block
+	float: right
+	>.menu__item
+		display: inline-block
+.menu__item
+	font-size: 40px
+	margin-left: 1em
+	height: 67px
+	line-height: 55px
+	&:after
+		content: ' /'
+.menu__item:hover
+	transition: all 0.4s ease
+	box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 1)
+	// color: white
+
+.header__tittle
+	border-bottom: 1px solid #808080
+	text-transform: uppercase
+	font-size: 80px
+	text-align: center
+	>p 
+		padding: 40px 0
+		display: inline-block
+		margin: 0
+
+@font-face
+ 	font-family: "Olietta-Script"
+ 	src: url(../fonts/Oliettascript.ttf) format("truetype")
+ 	font-style: normal
+ 	font-weight: normal
+ 	
